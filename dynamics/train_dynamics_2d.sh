@@ -1,0 +1,1 @@
+python fitness/main.py --save_dir='' --wandb_id='' --ctrlpts_dim=14 --batch_size=128 --object_max_num_vertices=100 --data_dir='' --test_data_dir='' --object_dir='' --learning_rate=1e-4 --weight_decay=0 --num_epochs=100 --val_step=1 --save_ckpt_step=1000 --patience=100 --num_workers=8 --num_train_timesteps=15 --num_inference_steps=5 --num_timesteps_per_batch=1

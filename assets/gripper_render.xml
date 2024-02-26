@@ -1,0 +1,19 @@
+<mujoco model="gripper_render">
+    <asset>
+        <mesh name="fingerl" file="fingerl.obj" />
+        <mesh name="fingerr" file="fingerr.obj" />
+    </asset>
+    <worldbody>
+        <body name="fingers" pos="0 0 0">
+            <body name="left_jaw" pos="0 -0.18 0" euler="0 0 -45">
+                <geom mesh="fingerl" type="mesh" rgba="0.9333 0.7804 0.3490 1"/>
+            </body>
+            <body name="right_jaw" pos="0 0.18 0" euler="0 0 45">
+                <geom mesh="fingerr" type="mesh" rgba="0.6941 0.7647 0.5059 1"/>
+            </body>
+        </body>
+        <body name="plane" pos="0 0 -0.01">
+            <geom type="plane" size="1 1 0.1" rgba="1.0 1.0 1.0 1" />
+        </body>
+    </worldbody>
+</mujoco>

@@ -1,0 +1,1 @@
+python generator/train.py --num_fingers=200000 --save_dir='' --fingers_3d --ctrlpts_dim=42 --ctrlpts_x_dim=7 --ctrlpts_z_dim=3 --learning_rate=1e-4 --lr_warmup_steps=0 --num_epochs=1000 --val_step=100 --num_workers=0 --num_train_timesteps=15 --num_inference_steps=5 --ema_power=0.85 --batch_size=1024

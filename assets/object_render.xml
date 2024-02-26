@@ -1,0 +1,14 @@
+<mujoco model="object_render">
+    <asset>
+        <mesh name="object" file="model.obj" />
+    </asset>
+    <worldbody>
+        <body name="object" pos="0 0 0">
+            <freejoint name="object_root"/>
+            <geom mesh="object" type="mesh"/>
+        </body>
+        <body name="plane" pos="0 0 -0.01">
+            <geom type="plane" size="1 1 0.1" rgba="1.0 1.0 1.0 1" />
+        </body>
+    </worldbody>
+</mujoco>
