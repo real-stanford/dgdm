@@ -32,6 +32,8 @@ bash sim/run_sim_2d.sh
 bash sim/run_sim_3d.sh
 ```
 
+Note for data generation: Sometimes the object shape or the sampled manipulator shape may have weird shape and thus lead to qhull error when doing convex decomposition. And ray is used to parallelize cpu-based data generation, which sometimes may lead to timeout issues. Therefore, it is expected if you see some timeout error message, this means that the data for this object-manipulator pair is not generated, but it should be fine as long as you see most data is being generated.
+
 ## Training
 [Download pretrained model checkpoints](https://drive.google.com/drive/folders/1jjC6G5Qv_ZkJwTjk2mCBkSyXkZu_w5EB?usp=sharing)
 ### Train Dynamics Model
