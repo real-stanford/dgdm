@@ -48,18 +48,9 @@ def train(args):
             ctrlpts = generate_3d_ctrlpts(yl, yr)
             gripper_pts.append(ctrlpts)
         else:
-            if args.curvy_fingers:
-                x = np.linspace(-0.12, 0.12, 13)
-                yl = 0.06 * (rs.uniform(size=13) - 0.5)
-                yr = 0.06 * (rs.uniform(size=13) - 0.5)
-            elif args.flat_fingers:
-                x = np.linspace(-0.12, 0.12, 5)
-                yl = 0.06 * (rs.uniform(size=5) - 0.5)
-                yr = 0.06 * (rs.uniform(size=5) - 0.5)
-            else:
-                x = np.linspace(-0.12, 0.12, 7)
-                yl = rs.uniform(-0.045, 0.015, size=(7))
-                yr = rs.uniform(-0.045, 0.015, size=(7))
+            x = np.linspace(-0.12, 0.12, 7)
+            yl = rs.uniform(-0.045, 0.015, size=(7))
+            yr = rs.uniform(-0.045, 0.015, size=(7))
             ctrlptsl = np.stack([x, yl], axis=-1)
             ctrlptsr = np.stack([x, yr], axis=-1)
             ctrlpts = np.concatenate((ctrlptsl, ctrlptsr), axis=0)

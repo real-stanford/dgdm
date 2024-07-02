@@ -1,0 +1,17 @@
+diffusers==0.11.1
+geomdl==5.3.1
+imageio==2.31.4
+matplotlib==3.7.3
+mujoco==3.1.1
+numpy==1.24.4
+open3d==0.17.0
+opencv_python==4.8.1.78
+pytorch_lightning==2.1.0
+ray==2.7.1
+scipy==1.12.0
+torch==2.0.1
+tqdm==4.66.1
+transforms3d==0.4.1
+triangle==20230923
+trimesh==3.23.5
+wandb==0.15.12

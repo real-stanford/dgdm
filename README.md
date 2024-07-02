@@ -20,6 +20,8 @@ Download 3D object meshes from [MuJoCo scanned object dataset](https://github.co
 
 ### Generate simulation data
 Replace ```OBJECT_DIR``` in ```sim/sim_2d.py``` and ```sim/sim_3d.py``` with the directory to object dataset.
+Install [v-hacd](https://github.com/kmammou/v-hacd)
+
 #### 2D
 ```
 bash sim/run_sim_2d.sh

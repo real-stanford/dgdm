@@ -161,7 +161,6 @@ cython_debug/
 *.mtl
 *.obj
 *.stl
-*.txt
 *.zarr
 wandb/
 histogram/
