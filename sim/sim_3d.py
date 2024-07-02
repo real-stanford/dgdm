@@ -1,6 +1,10 @@
 import os
-import glob
 import sys
+from os.path import join as pjoin
+BASEPATH = os.path.dirname(__file__)
+sys.path.insert(0, BASEPATH)
+sys.path.insert(0, pjoin(BASEPATH, '..'))
+import glob
 from typing import Optional
 import shutil
 
